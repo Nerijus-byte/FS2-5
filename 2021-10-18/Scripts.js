@@ -107,21 +107,12 @@ function calculateValue(num1, num2, action) {
     if (typeof num1 !== 'number' || typeof num2 !== 'number') {
         return false;
     }
-    if (action == addition) {
-        return addition(num1, num2);
-    }
-    if (action == subtraction) {
-        return subtraction(num1, num2);
-    }
-    if (action == multiplication) {
-        return multiplication(num1, num2);
-    }
-    if (action == division) {
-        return division(num1, num2);
+    if (typeof action === "function") {
+         return action(num1,num2)
     }
 }
 
-console.log(calculateValue(10,8,division));
+console.log(calculateValue(10,8,multiplication));
 
 
 
