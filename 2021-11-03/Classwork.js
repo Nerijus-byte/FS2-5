@@ -9,4 +9,4 @@ let movie = new Movie('The Curse of the Black Pearl', '2003', 'Gore Verbinski', 
 let movie1 = new Movie('Dead Man\'s Chest', '2006', 'Gore Verbinski', '225', '1066');
 
 console.log(movie.getIntroduction(), movie.getProfit());
-console.log(movie.getIntroduction(), movie1.getProfit());
+console.log(movie1.getIntroduction(), movie1.getProfit());
