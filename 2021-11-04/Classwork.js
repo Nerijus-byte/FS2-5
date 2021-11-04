@@ -12,6 +12,9 @@
 // jei automobilio amžius yra 11 metų arba senesnis (šio metodo logikai naudokite ternary operatorių ir Date() metodą)
 
 let car = new Car ('Audi', '80', 1993);
+let car1 = new Car ('BWM', 'E46', 2019);
 
 console.log(car.getIntroduction());
 console.log(car.getAge());
+console.log(car1.getIntroduction());
+console.log(car1.getAge());
