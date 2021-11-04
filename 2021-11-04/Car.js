@@ -9,7 +9,7 @@ class Car {
     }
     getAge() {
         let carAge = (new Date).getFullYear() - this.year;
-        return carAge >= 10 ? '10 metų arba naujesnis' : '11 metų arba senesnis';
+        return carAge <= 10 ? '10 metų arba naujesnis' : '11 metų arba senesnis';
     }
 }
 
